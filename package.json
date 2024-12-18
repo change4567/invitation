@@ -1,0 +1,15 @@
+{
+  "name": "invitation",
+  "version": "1.0.0",
+  "description": "一个基于 Web 的邀请函生成系统,通过输入用户信息自动生成个性化的游戏疗愈邀请报告。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
