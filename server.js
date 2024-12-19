@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
-app.use(express.static('src'));
+app.use(express.static('public'));
 app.use(express.json());
 
 // 模拟API响应
@@ -19,6 +19,11 @@ app.post('/api/generate', (req, res) => {
     setTimeout(() => {
         res.json({ report });
     }, 1000); // 模拟网络延迟
+});
+
+// 添加根路由
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(port, () => {

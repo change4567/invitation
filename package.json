@@ -1,15 +1,19 @@
 {
   "name": "invitation",
   "version": "1.0.0",
-  "description": "一个基于 Web 的邀请函生成系统,通过输入用户信息自动生成个性化的游戏疗愈邀请报告。",
-  "main": "index.js",
+  "description": "游戏疗愈邀请函生成器",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "build": "npm install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
